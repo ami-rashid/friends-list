@@ -75,11 +75,11 @@ input[type=submit]:hover {
     border-radius: 10px;
 }
 
-.friendsList {
+#friendsList {
     margin:auto;
     background-color: white; 
-    width: 400px; 
-    height: 400px; 
+    width: 380px; 
+    height: 350px; 
     overflow-x: hidden; 
     overflow-y: auto; 
     text-align: left;

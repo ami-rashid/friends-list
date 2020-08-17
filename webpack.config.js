@@ -1,8 +1,12 @@
 module.exports = {
-    mode: "development",
-    entry: './src/index.js',
-    output: {
-      path: __dirname + '/public',
-      filename: 'bundle.js'
-    }
-  }
+  mode: "development",
+  entry: './src/app.js',
+  output: {
+    path: __dirname + '/public',
+    filename: 'bundle.js'
+  },
+  node: {
+    fs: "empty",
+    net: 'empty'
+ }
+}

@@ -2,10 +2,10 @@
   "name": "friends-list",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start:dev": "npm run start-server & npm run build-watch",
-    "start-server": "nodemon ./src/index.js --ignore public",
+    "start-server": "nodemon ./src/app.js --ignore public",
     "build-watch": "webpack -w",
     "start": "npm run start:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,9 +22,12 @@
   },
   "homepage": "https://github.com/ami-rashid/friends-list#readme",
   "dependencies": {
+    "bluebird": "^3.7.2",
     "express": "^4.17.1",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "pg": "^8.3.0",
+    "sequelize": "^6.3.4"
   },
   "devDependencies": {
     "webpack": "^4.44.1",
