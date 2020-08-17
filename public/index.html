@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>¡Amigo! An app for friends!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
+        <link rel="stylesheet" href="./style.css"></link>
+        <script src="./bundle.js"></script>
+    </head>
+</html>
+
+<body>
+    <section class="header">
+        <div class="logo">
+            <h1>¡Amigo!</h1>
+            <h6>( An app for friends! )</h6>
+        </div>
+    </section>
+    <div class="create">
+        <form>
+            <label for="fname">Create a new friend:</label><br>
+            <input type="text" id="newFriend" name="fname" size="30%" placeholder="Enter a new friend's name">
+            <input type="submit" value="Create">
+          </form>
+    </div>
+    <div class="friends">
+        <h4>My Friends:</h4>
+    </div>
+    <section>
+        <ol class="friendsList">
+            <li>
+                <strong>Star Platinum</strong><br>
+                <p>5</p>
+                <button type="button" onclick="alert('Rank up!')">+</button>
+                <button type="button" onclick="alert('Rank down!')">-</button>
+                <button type="button" onclick="alert('Deleted!')">x</button>
+            </li>
+            <li>
+                <strong>Batman</strong><br>
+                <p>5</p>
+                <button type="button" onclick="alert('Rank up!')">+</button>
+                <button type="button" onclick="alert('Rank down!')">-</button>
+                <button type="button" onclick="alert('Deleted!')">x</button>
+            </li>
+            <li>
+                <strong>My mom</strong><br>
+                <p>5</p>
+                <button type="button" onclick="alert('Rank up!')">+</button>
+                <button type="button" onclick="alert('Rank down!')">-</button>
+                <button type="button" onclick="confirm('Are you sure you want to delete?')">x</button>
+            </li>
+            <li>
+                <strong>A horse</strong><br>
+                <p>5</p>
+                <button type="button" onclick="alert('Rank up!')">+</button>
+                <button type="button" onclick="alert('Rank down!')">-</button>
+                <button type="button" onclick="alert('Deleted!')">x</button>
+            </li>
+        </ol>
+    </section>
+    <script src="./bundle.js"></script>
+</body>
