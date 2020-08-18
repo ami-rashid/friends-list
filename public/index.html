@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="./style.css"></link>
-        <script src="./bundle.js"></script>
     </head>
 </html>
 
@@ -17,8 +16,8 @@
         </div>
     </section>
     <div class="create">
-        <form>
-            <label for="fname">Create a new friend:</label><br>
+        <form id="myForm">
+            <label for="newFriend">Create a new friend:</label><br>
             <input type="text" id="newFriend" name="fname" size="30%" placeholder="Enter a new friend's name">
             <input type="submit" value="Create">
           </form>
@@ -28,34 +27,6 @@
     </div>
     <section>
         <ol id="friendsList">
-            <li>
-                <strong>Star Platinum</strong><br>
-                <p>5</p>
-                <button type="button" onclick="alert('Rank up!')">+</button>
-                <button type="button" onclick="alert('Rank down!')">-</button>
-                <button type="button" onclick="alert('Deleted!')">x</button>
-            </li>
-            <li>
-                <strong>Batman</strong><br>
-                <p>5</p>
-                <button type="button" onclick="alert('Rank up!')">+</button>
-                <button type="button" onclick="alert('Rank down!')">-</button>
-                <button type="button" onclick="alert('Deleted!')">x</button>
-            </li>
-            <li>
-                <strong>My mom</strong><br>
-                <p>5</p>
-                <button type="button" onclick="alert('Rank up!')">+</button>
-                <button type="button" onclick="alert('Rank down!')">-</button>
-                <button type="button" onclick="confirm('Are you sure you want to delete?')">x</button>
-            </li>
-            <li>
-                <strong>A horse</strong><br>
-                <p>5</p>
-                <button type="button" onclick="alert('Rank up!')">+</button>
-                <button type="button" onclick="alert('Rank down!')">-</button>
-                <button type="button" onclick="alert('Deleted!')">x</button>
-            </li>
         </ol>
     </section>
     <script src="./bundle.js"></script>

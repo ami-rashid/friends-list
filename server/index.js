@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 const db = new Sequelize('postgres://localhost:5432/friendslist')
 const { STRING } = Sequelize;
 
-const Friend = db.define('hotel', {
+const Friend = db.define('friends', {
     name: {
         type: STRING
     },

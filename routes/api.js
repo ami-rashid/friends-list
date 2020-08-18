@@ -3,14 +3,9 @@ const router = express.Router();
 const models = require('../server/index');
 const Friend = models.Friend;
 
-const allPromises = [Friend.findAll()];
-let allFriends = {};
 
 router.get('/', async (req, res, next) => {
-    await Promise.all(allPromises).then((values) => {
-        allFriends = values[0];
-    })
-
+    const allFriends = await Friend.findAll();
     res.send(allFriends);
 })
 

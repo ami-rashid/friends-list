@@ -14,7 +14,7 @@ body {
 .header {
     display: flex;
     align-content: center;
-    height: 175px;
+    height: 200px;
     background-image: url('https://carlossanchez.me/img/posts/night-sky/night-sky-header.jpg');
     background-size: cover;
 }
@@ -78,8 +78,8 @@ input[type=submit]:hover {
 #friendsList {
     margin:auto;
     background-color: white; 
-    width: 380px; 
-    height: 350px; 
+    width: 300px; 
+    height: auto; 
     overflow-x: hidden; 
     overflow-y: auto; 
     text-align: left;
@@ -102,6 +102,6 @@ ol button {
 
 ol p {
     display: inline-block;
-    text-align: center;
+    text-align: end;
     color: #fa2e2e;
 }
