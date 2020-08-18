@@ -103,12 +103,12 @@ async function defineFriends() {
 
         fetch('/api', {
           method: 'post',
-          body: formData
-        }).then(function(response) {
-          return response.json();
-        }).then(function(json) {
-
-        })
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({formData})
+        }).then(res => res.json())
+          .then(output => console.log(output))
       });
 
       const result = await fetch('/api')
