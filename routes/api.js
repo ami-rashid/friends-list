@@ -10,20 +10,42 @@ router.get('/', async (req, res) => {
     res.send(allFriends);
 })
 
-router.post('/', async (req, res) => {
-    const newFriend = await Friend.create({
-        name: req.params.name,
-        rating: 5
-    })
-    res.send(newFriend);
+router.post('/', async (req, res, next) => {
+    try {
+        Friend.create({
+            name: req.body.name,
+            rating: 5
+        })
+        res.redirect('/');
+    } catch (err) {
+        next (err);
+    }
 })
 
 router.delete('/', async (req, res) => {
-    const newFriend = await Friend.destroy({
-        where: {
-            
-        }
-    })
+    try {
+        Friend.destroy({
+            where: {
+                name:req.body.params.name
+            }
+        })
+        res.redirect('/');
+    } catch (err) {
+        next (err);
+    }
+})
+
+router.put('/:name', async (req, res) => {
+    try {
+        Friend.update({rating: req.body.value},{
+            where: {
+                name:req.body.params.name
+            }
+        })
+        res.redirect('/');
+    } catch (err) {
+        next (err);
+    }
 })
 
 module.exports = router;
